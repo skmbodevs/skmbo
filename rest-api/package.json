@@ -2,13 +2,19 @@
   "name": "rest-api",
   "version": "1.0.0",
   "description": "Skmbo rest api",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+   "dev": "nodemon",
+   "lint": "eslist --ext .js -f  ./node_modules/eslint-friendly-formatter . --fix",
+   "prepush": "npm run lint",
+   "start": "node server.js"
   },
   "keywords": [
     "node",
-    "skmbo"
+    "skmbo",
+    "javascript",
+    "CRUD",
+    "react-native"
   ],
   "author": "Rhaniery Mueller",
   "license": "ISC",
